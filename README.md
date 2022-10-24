@@ -39,32 +39,4 @@ POST запрос http://127.0.0.1:8000/api/v1/follow/
 
 POST запрос http://127.0.0.1:8000/api/v1/jwt/create/
 
-` "username": "string", "password": "string" }`
-
-POST запрос http://127.0.0.1:8000/api/v1/posts/
-
-{
-  "text": "string",
-  "image": "string",
-  "group": 0
-}
-
-POST запрос http://127.0.0.1:8000/api/v1/posts/{post_id}/comments/
-
-{
-  "text": "string"
-}
-
-POST запрос http://127.0.0.1:8000/api/v1/follow/
-
-{
-  "following": "string"
-}
-
-POST запрос http://127.0.0.1:8000/api/v1/jwt/create/
-
-{
-  "username": "string",
-  "password": "string"
-}
-
+`{ "username": "string", "password": "string" }`
