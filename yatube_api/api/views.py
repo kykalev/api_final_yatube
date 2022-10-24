@@ -58,6 +58,7 @@ class FollowViewSet(viewsets.ModelViewSet):
     permission_classes = (IsAuthenticated, FollowPermission,)
     filter_backends = (filters.SearchFilter,)
     search_fields = ('user__username', 'following__username')
+    http_method_names = ['get', 'post']
 
     def get_queryset(self):
         user = self.request.user
