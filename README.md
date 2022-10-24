@@ -1,6 +1,7 @@
 ### Описание:
 Это проект ***api_final_yatube***, в котором средствами *api запросов* можно создать или просмтореть пост, написать комментарий к посту. А так же подписать на автора поста.
 ### Как запустить проект:
+Как запустить проект:
 
 Клонировать репозиторий и перейти в него в командной строке:
 
@@ -39,4 +40,31 @@ POST запрос http://127.0.0.1:8000/api/v1/follow/
 POST запрос http://127.0.0.1:8000/api/v1/jwt/create/
 
 ` "username": "string", "password": "string" }`
+
+POST запрос http://127.0.0.1:8000/api/v1/posts/
+
+{
+  "text": "string",
+  "image": "string",
+  "group": 0
+}
+
+POST запрос http://127.0.0.1:8000/api/v1/posts/{post_id}/comments/
+
+{
+  "text": "string"
+}
+
+POST запрос http://127.0.0.1:8000/api/v1/follow/
+
+{
+  "following": "string"
+}
+
+POST запрос http://127.0.0.1:8000/api/v1/jwt/create/
+
+{
+  "username": "string",
+  "password": "string"
+}
 
